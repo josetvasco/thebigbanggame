@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Big Bang Game!</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section style="height: 100vh;" id="seleccionar-personaje">
+            <h1 class="titulo">the BiG <span class="logo">BANG</span> GAME!</h1>
+
+            <h2 class="subtitulo">Elige tu personaje:</h2>
+
+            <div id="contenedor-tarjetas" class="tarjetas">
+                
+            </div>
+
+            <button id="boton-personaje">Seleccionar</button>
+        </section>
+
+        <section id="ver-mapa">
+            <h1 class="titulo">the BiG <span class="logo">BANG</span> GAME!</h1>   
+
+            <h2 class="subtitulo">Recorre el mapa con tu personaje:</h2>
+
+            <canvas id="mapa"></canvas>
+            <div class="botones-mapa">
+
+                <button class="up" 
+                    ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
+                    ontouchstart="moverArriba()" onmousedown="moverArriba()">
+                    ⬆
+                </button>
+                <button class="left"
+                    ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" 
+                    ontouchstart="moverIzquierda()" onmousedown="moverIzquierda()">
+                    ⬅
+                </button>
+                <button class="down"
+                    ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
+                    ontouchstart="moverAbajo()" onmousedown="moverAbajo()">
+                    ⬇
+                </button>
+                <button class="right"
+                    ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()"
+                    ontouchstart="moverDerecha()" onmousedown="moverDerecha()">
+                    ➡
+                </button>
+            </div>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">the BiG <span class="logo">BANG</span> GAME!</h1> 
+
+            <h2  class="subtitulo">Elige tu ataque:</h2>
+
+            <div class="tarjetas-ataques" id="contenedor-ataques">
+               
+            </div>
+
+            <div id="mensajes">
+                <p id="resultado">BATALLEMOS!</p>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Jugar de nuevo</button>
+                </section>
+            </div>
+
+            <div class="movimientos">
+                <div class="movimientos-jugador">
+                    <p id="corazon"><img src="img/Corazon.png" ></p>
+                    <p id="vidas-jugador">5</p>
+                    <p id="personaje-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="validacion">
+                <p class="titulo-resultado">Resultado</p>
+                <div id="resultado-ataque"></div>
+                </div>
+
+                <div class="movimientos-enemigo">
+                    <p id="corazon"><img src="img/Corazon.png"></p>
+                    <p id="vidas-enemigo">5</p>
+                    <p id="personaje-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/bigbang.js"></script>
+    </body>
+</html>

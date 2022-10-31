@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+body {
+    border: solid 0px black;
+    background: radial-gradient(  white, rgb(162, 220, 239), rgb(72, 196, 237), rgb(50, 155, 190));  
+    font-family: 'Poppins', sans-serif;  
+}
+
+#seleccionar-personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: #ce1a1a;
+}
+
+.subtitulo{
+    font-size: 28px;
+}
+
+.tarjetas {
+    display: flex;
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tarjeta-de-personajes {
+    width: 100px;
+    height: 137px;
+    background: #384a5c;
+    box-sizing: border-box;
+    margin: 8px;
+    border-color: #cf3c3c rgba(255, 255, 255, 0.1);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    color: white;  
+    font-size: 13px;
+}
+
+input:checked + label  {
+    background: #cf3c3c;
+    border-color: #384a5c rgba(255, 255, 255, 0.1);
+}
+
+.tarjeta-de-personajes:hover {
+    cursor: pointer;
+    border: 8px solid #cf3c3c;
+}
+
+.tarjeta-de-personajes img {
+    width: 70px;
+}
+
+#boton-personaje {
+    width: 167px;
+    height: 39px;
+    border-radius: 15px;
+    background: #cf3c3c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#boton-personaje:hover {
+    cursor: pointer;
+}
+    
+p {
+    margin: auto;
+}
+
+input {
+    display: none; 
+}
+
+.tarjetas-ataques img{
+    display: flex;
+    width: 70px;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.boton-de-ataque {
+    background: #384a5c;
+    border-radius: 20px;
+    border: 3px solid #cf3c3c;
+    padding: 6px;
+    box-sizing: border-box;
+    margin: 5px;
+    color:white
+}
+
+.boton-de-ataque:hover {
+    cursor: pointer;
+    background: #cf3c3c;
+    border: 3px solid #384a5c;
+}
+
+#mensajes {
+    width: 280px;
+    background: #384a5c;
+    border: 3px solid #cf3c3c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    width: 167px;
+    height: 39px;
+    border-radius: 15px;
+    background: #cf3c3c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#boton-reiniciar {
+    cursor: pointer;
+}
+
+.movimientos {
+    display: flex;
+    grid-template-columns: 100px 100px;
+}
+
+.movimientos-jugador {
+    border: 4px solid#cf3c3c;
+    border-radius: 20px;
+    background: #384a5c;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 3px 4px 3px 0px black;
+    width: 100px;
+}
+
+.movimientos-enemigo {
+    border: 4px solid#cf3c3c;
+    border-radius: 20px;
+    background: #384a5c;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 3px 4px 3px 0px black;
+    width: 100px;
+}
+
+.validacion {
+    border: 4px solid#cf3c3c;
+    border-radius: 20px;
+    background: #384a5c;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 3px 4px 3px 0px black;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.titulo-resultado {
+    margin-top: 35px;
+    margin-bottom: 14px;
+    font-weight:  bolder
+}
+
+#corazon {
+    margin-top: 6px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    margin: -41px;
+    font-weight:  bolder;
+}
+
+#personaje-jugador, #personaje-enemigo {
+    margin-top: 25px;
+    font-weight:  bolder;
+}
+
+#personaje-enemigo, #personaje-jugador {
+    margin-top: 49px;
+}
+
+.input:checked + label {
+    width: 9vw;
+    height: 18vh;
+    border-radius: 50%;
+    background-color: rgba(136,188,209,.8);
+    color: #082432;
+}
+
+#ver-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 42px;
+    height: 36px;
+    border-radius: 7px;
+    background: #cf3c3c;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.botones-mapa {
+    display: grid;
+    gap: .25rem;
+    grid-template-columns: repeat(3, 7fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 5px;
+}
+
+.botones-mapa .up {
+    grid-column: 2 / 3;
+}
+
+.botones-mapa .right {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.botones-mapa .down {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.botones-mapa .left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 415px) {
+    .tarjetas {
+        flex-direction: column;
+        width: 280px;
+        height: 643px;
+        align-items: center;
+    }
+
+    .tarjeta-de-personaje {
+        width: 88px;
+        height: 107px;
+        font-size: 11px;
+    }
+
+    .tarjeta-de-personaje img {
+        width: 53px;
+    }
+
+    #boton-personaje {
+        width: 167px;
+        height: 39px;
+    }
+
+    .subtitulo{
+        font-size: 22px;
+        margin-bottom: -1px;
+    }
+
+    .titulo {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+}
